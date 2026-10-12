@@ -110,3 +110,30 @@ for(const [id,name,address,text,url] of cafes){sources.push({name,url});places.p
 sources.push({name:'Los Marinos Paco',url:'https://www.losmarinospaco.es/en/contact.html'});
 places.push({id:'paco',name:'Los Marinos Paco',city:'Costa del Sol',kind:'Restaurant',text:'Un chiringuito décontracté à Carvajal, pour poisson, salades et plats à partager.',detail:'Paseo Marítimo Rey de España, 158. Autre établissement que Los Marinos José. Demander le prix avant de commander les poissons entiers au kilo ; confirmer l’ouverture.',source:sources.length-1});
 places.find(p=>p.id==='marinos').detail+=' Adresse : Paseo Marítimo Rey de España, 161.';
+export const walks={
+'sohail':{distance:'3–4 km',maxKm:4,effort:'Modéré',terrain:'Front de mer largement plat ; pente finale vers le château.'},
+'boliches':{distance:'2–3 km',maxKm:3,effort:'Doux',terrain:'Petite promenade de quartier ; vérifier l’accès au site archéologique.'},
+'carvajal':{distance:'2–4 km',maxKm:4,effort:'Modéré',terrain:'Dénivelé entre la gare et la plage ; promenade adaptable.'},
+'malaga':{distance:'4–5 km',maxKm:5,effort:'Doux',terrain:'Parcours urbain à raccourcir ; prévoir des pauses.'},
+'mijas':{distance:'2–3 km',maxKm:3,effort:'Modéré',terrain:'Rues en pente et pavés.'},
+'valence-centre':{distance:'3 km',maxKm:3,effort:'Doux',terrain:'Centre urbain ; pauses et visites à choisir librement.'},
+ 'turia':{distance:'3–5 km',maxKm:5,effort:'Doux',terrain:'Choisir un tronçon du jardin et prévoir un point de sortie.'},
+'madrid-old':{distance:'3 km',maxKm:3,effort:'Doux',terrain:'Parcours urbain, hors visite intérieure du palais.'},
+'cerralbo':{distance:'2 km + musée',maxKm:2,effort:'Doux',terrain:'Marche courte, temps debout supplémentaire dans le musée.'},
+'retiro':{distance:'3–4 km',maxKm:4,effort:'Doux',terrain:'Raccourcir la portion du parc selon la météo et l’énergie.'},
+'born':{distance:'3 km',maxKm:3,effort:'Doux',terrain:'Promenade urbaine ; le trajet vers le terminal de croisière est séparé.'}
+};
+export const facts=[
+{city:'Costa del Sol',title:'La côte avant les plages',text:'La Finca del Secretario révèle le passé romain de Fuengirola. Une découverte archéologique compacte à combiner avec Los Boliches et le bord de mer.',url:'https://www.visitafuengirola.com/ciudad/historia/'},
+{city:'Costa del Sol',title:'Sohail, même sans entrer',text:'Le château peut être le point d’arrivée d’une promenade au fil de l’eau. Les vues extérieures donnent un but à la balade, même lorsque la visite intérieure n’est pas possible.',url:'https://turismo.fuengirola.es/wp-content/uploads/2024/11/241108-GUIA-FUENGIROLA-SIN-HOTELES.pdf'},
+{city:'Costa del Sol',title:'Un musée à taille de maison',text:'À Málaga, le Museo del Vidrio y Cristal associe verre et arts décoratifs dans une maison. La visite guidée en fait une parenthèse différente des grands musées.',url:'https://museovidrioycristalmalaga.com/informacion.html'},
+{city:'Madrid',title:'Entrer dans un autre Madrid',text:'Cerralbo, le Romanticismo et la maison de Lope de Vega donnent accès à des intérieurs et à des histoires personnelles. Choisir une maison-musée offre une visite plus intime.',url:'https://www.esmadrid.com/en/house-museums'},
+{city:'Madrid',title:'Une pause dans l’histoire commerçante',text:'Les enseignes historiques, comme La Mallorquina, peuvent ponctuer la découverte du vieux Madrid. Une pause gourmande devient aussi une façon de regarder la ville.',url:'https://www.esmadrid.com/historias-centenarias-madrid'},
+{city:'Valence',title:'Un fleuve devenu jardin',text:'Le jardin du Turia occupe l’ancien lit du fleuve. On peut en choisir quelques kilomètres plutôt que vouloir parcourir tout ce grand espace urbain.',url:'https://www.visitvalencia.com/en/what-to-do-valencia/nature-in-valencia/parks-and-gardens-valencia/turia-gardens'},
+{city:'Valence',title:'Suivre le fil de la soie',text:'La soie a marqué l’histoire valencienne. Le Museo de la Seda aide à lire cet héritage, en complément de la Lonja et des promenades dans la vieille ville.',url:'https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/museum-in-valencia/silk-museum'},
+{city:'Valence',title:'Le marché fait partie de la visite',text:'Le Mercado Central réunit une architecture moderniste et la vie des étals. Mieux vaut le découvrir le matin et prévoir le repas du soir ailleurs.',url:'https://www.spain.info/en/destination/valencia/'},
+{city:'Barcelone',title:'Deux ports, deux usages',text:'Le Port Vell est le vieux port touristique. Une promenade autour de ses quais ne conduit pas automatiquement au terminal de croisière : prévoir le transfert séparément.',url:'https://www.portdebarcelona.cat/en/business-and-services/cruise-ships/information-passenger/services/transport-services'},
+{city:'Escales facultatives',title:'À Las Palmas, choisir une ambiance',text:'Las Canteras invite à la marche en bord de mer ; Vegueta offre la vieille ville, ses places et la Casa de Colón. Un seul secteur permet de profiter davantage de l’escale.',url:'https://www.grancanaria.com/turismo/isla-de-gran-canaria/municipios-de-gran-canaria/las-palmas-de-gran-canaria/recorrervegueta/'},
+{city:'Escales facultatives',title:'Funchal, marché et vieille ville',text:'Le Mercado dos Lavradores s’intègre facilement à une promenade entre le front de mer et la vieille ville. Les prix des fruits se demandent avant dégustation ou achat.',url:'https://www.visitmadeira.com/en/what-to-do/culture-passionates/heritage/monuments-and-architecture/mercado-dos-lavradores/'},
+{city:'Escales facultatives',title:'Tanger : le quai change tout',text:'La médina, ses places et la Kasbah se découvrent dans un parcours en pente. Tanger-ville et Tanger Med ne sont pas interchangeables : vérifier le port avant d’organiser la sortie.',url:'https://www.visitmorocco.com/fr/voyage/tanger/medina'}
+];

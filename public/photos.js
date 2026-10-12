@@ -1,0 +1,110 @@
+export const photos = [
+  {
+    "id": "fuengirola",
+    "title": "Playa_de_Carvajal,_Fuengirola_11.jpg",
+    "author": "Tyk",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Playa_de_Carvajal%2C_Fuengirola_11.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Playa_de_Carvajal%2C_Fuengirola_11.jpg",
+    "credit": "Tyk / Wikimedia Commons / CC BY-SA 3.0",
+    "changes": "Redimensionnée (maximum 1600 px) et recompressée en JPEG; aucun recadrage ni modification générative.",
+    "bundle_path": "fuengirola.jpg",
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "size_bytes": 286837,
+    "display_changes": "Recadrage à l’affichage selon le format de la carte ; fichier source non recadré."
+  },
+  {
+    "id": "madrid",
+    "title": "Plaza_Mayor_de_Madrid,_Panorama_1.jpg",
+    "author": "D.Rovchak",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Plaza_Mayor_de_Madrid%2C_Panorama_1.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Plaza_Mayor_de_Madrid%2C_Panorama_1.jpg",
+    "credit": "D.Rovchak / Wikimedia Commons / CC BY-SA 4.0",
+    "changes": "Redimensionnée (maximum 1600 px) et recompressée en JPEG; aucun recadrage ni modification générative.",
+    "bundle_path": "madrid.jpg",
+    "dimensions": [
+      1600,
+      688
+    ],
+    "size_bytes": 166933,
+    "display_changes": "Recadrage à l’affichage selon le format de la carte ; fichier source non recadré."
+  },
+  {
+    "id": "valencia",
+    "title": "Mercado_Central_de_Valencia.JPG",
+    "author": "Karman85",
+    "license": "CC BY-SA 3.0 ES",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/es/",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Mercado_Central_de_Valencia.JPG",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Mercado_Central_de_Valencia.JPG",
+    "credit": "Karman85 / Wikimedia Commons / CC BY-SA 3.0 ES",
+    "changes": "Redimensionnée (maximum 1600 px) et recompressée en JPEG; aucun recadrage ni modification générative.",
+    "bundle_path": "valencia.jpg",
+    "dimensions": [
+      1600,
+      1067
+    ],
+    "size_bytes": 341865,
+    "display_changes": "Recadrage à l’affichage selon le format de la carte ; fichier source non recadré."
+  },
+  {
+    "id": "barcelona",
+    "title": "Port_Vell_(7856586122).jpg",
+    "author": "Craig Sunter",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Port_Vell_%287856586122%29.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Port_Vell_%287856586122%29.jpg",
+    "credit": "Craig Sunter / Wikimedia Commons / CC BY 2.0",
+    "changes": "Redimensionnée (maximum 1600 px) et recompressée en JPEG; aucun recadrage ni modification générative.",
+    "bundle_path": "barcelona.jpg",
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "size_bytes": 247917,
+    "display_changes": "Recadrage à l’affichage selon le format de la carte ; fichier source non recadré."
+  },
+  {
+    "id": "lanzarote",
+    "title": "El_Charco_de_San_Ginés.jpg",
+    "author": "Santamarcanda",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:El_Charco_de_San_Gin%C3%A9s.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/El_Charco_de_San_Gin%C3%A9s.jpg",
+    "credit": "Santamarcanda / Wikimedia Commons / CC BY-SA 4.0",
+    "changes": "Redimensionnée (maximum 1600 px) et recompressée en JPEG; aucun recadrage ni modification générative.",
+    "bundle_path": "lanzarote.jpg",
+    "dimensions": [
+      1600,
+      1066
+    ],
+    "size_bytes": 228423,
+    "display_changes": "Recadrage à l’affichage selon le format de la carte ; fichier source non recadré."
+  },
+  {
+    "id": "madeira",
+    "title": "Zona_Velha,_Funchal,_Madeira_-_2012-03-13_-_DSC06044.jpg",
+    "author": "DarwIn",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Zona_Velha%2C_Funchal%2C_Madeira_-_2012-03-13_-_DSC06044.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Zona_Velha%2C_Funchal%2C_Madeira_-_2012-03-13_-_DSC06044.jpg",
+    "credit": "DarwIn / Wikimedia Commons / CC BY-SA 4.0",
+    "changes": "Redimensionnée (maximum 1600 px) et recompressée en JPEG; aucun recadrage ni modification générative.",
+    "bundle_path": "madeira.jpg",
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "size_bytes": 250272,
+    "display_changes": "Recadrage à l’affichage selon le format de la carte ; fichier source non recadré."
+  }
+];

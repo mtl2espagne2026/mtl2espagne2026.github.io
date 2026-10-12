@@ -1,1 +1,12 @@
-{"name":"espagne-guide","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node build.mjs","test":"node tests/browser.mjs","start":"python3 -m http.server 4173 --directory dist"}}
+{
+  "name": "espagne-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node tests/browser.mjs",
+    "start": "python3 -m http.server 4173 --directory dist",
+    "publish:root": "npm run build && node publish-root.mjs"
+  }
+}

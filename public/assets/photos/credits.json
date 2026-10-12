@@ -14,7 +14,8 @@
       1600,
       1200
     ],
-    "size_bytes": 286837
+    "size_bytes": 286837,
+    "display_changes": "Recadrage à l’affichage selon le format de la carte ; fichier source non recadré."
   },
   {
     "id": "madrid",
@@ -31,7 +32,8 @@
       1600,
       688
     ],
-    "size_bytes": 166933
+    "size_bytes": 166933,
+    "display_changes": "Recadrage à l’affichage selon le format de la carte ; fichier source non recadré."
   },
   {
     "id": "valencia",
@@ -48,24 +50,8 @@
       1600,
       1067
     ],
-    "size_bytes": 341865
-  },
-  {
-    "id": "airport",
-    "title": "Barajas_t4.jpg",
-    "author": "MdeVicente",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Barajas_t4.jpg",
-    "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Barajas_t4.jpg",
-    "credit": "MdeVicente / Wikimedia Commons / CC BY-SA 4.0",
-    "changes": "Redimensionnée (maximum 1600 px) et recompressée en JPEG; aucun recadrage ni modification générative.",
-    "bundle_path": "airport.jpg",
-    "dimensions": [
-      1600,
-      900
-    ],
-    "size_bytes": 212141
+    "size_bytes": 341865,
+    "display_changes": "Recadrage à l’affichage selon le format de la carte ; fichier source non recadré."
   },
   {
     "id": "barcelona",
@@ -82,7 +68,8 @@
       1600,
       1200
     ],
-    "size_bytes": 247917
+    "size_bytes": 247917,
+    "display_changes": "Recadrage à l’affichage selon le format de la carte ; fichier source non recadré."
   },
   {
     "id": "lanzarote",
@@ -99,7 +86,8 @@
       1600,
       1066
     ],
-    "size_bytes": 228423
+    "size_bytes": 228423,
+    "display_changes": "Recadrage à l’affichage selon le format de la carte ; fichier source non recadré."
   },
   {
     "id": "madeira",
@@ -116,23 +104,7 @@
       1600,
       1200
     ],
-    "size_bytes": 250272
-  },
-  {
-    "id": "tangier",
-    "title": "Tangier1.jpg",
-    "author": "Jnpet",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Tangier1.jpg",
-    "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Tangier1.jpg",
-    "credit": "Jnpet / Wikimedia Commons / CC BY-SA 3.0",
-    "changes": "Redimensionnée (maximum 1600 px) et recompressée en JPEG; aucun recadrage ni modification générative.",
-    "bundle_path": "tangier.jpg",
-    "dimensions": [
-      1280,
-      960
-    ],
-    "size_bytes": 135292
+    "size_bytes": 250272,
+    "display_changes": "Recadrage à l’affichage selon le format de la carte ; fichier source non recadré."
   }
 ]

@@ -1,4 +1,4 @@
-name: Publish guide
+name: Validate and publish guide
 on:
   push:
     branches: [main]
@@ -19,11 +19,15 @@ jobs:
         with:
           node-version: 22
       - run: npm run build
+      - run: node --check public/app.js
       - uses: actions/configure-pages@v5
+        if: github.event_name == 'workflow_dispatch'
       - uses: actions/upload-pages-artifact@v3
+        if: github.event_name == 'workflow_dispatch'
         with:
           path: dist
   deploy:
+    if: github.event_name == 'workflow_dispatch'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

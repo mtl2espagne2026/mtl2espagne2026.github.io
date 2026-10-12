@@ -4,11 +4,11 @@
 
 Un guide indépendant en français pour explorer l’Espagne à pied, en train et au bord de la mer. Des promenades à composer, des cafés, des tables et des musées moins évidents, avec des informations pratiques pour voyager sereinement.
 
-**Adresse de publication prévue : https://mtl2espagne2026.github.io/** — la mise en ligne doit encore être vérifiée. Le code est prêt pour GitHub Pages ; ce lien ne constitue pas une preuve de déploiement.
+**Application : https://mtl2espagne2026.github.io/** · Le fichier `index.html` à la racine est le point d’entrée du site ; ce README est la documentation du dépôt.
 
 ## Ce que propose le guide
 
-- 29 recommandations à rechercher et à filtrer par destination et envie.
+- 29 recommandations à rechercher et à filtrer par destination, envie, distance et terrain ; favoris conservés localement.
 - Madrid, les transferts depuis l’aéroport, Fuengirola, la Costa del Sol et Valence.
 - Des idées de promenade à Barcelone et des modules d’escales atlantiques **conditionnels**, sans navire ni réservation présumés.
 - Une carte schématique locale, des points d’intérêt documentés et une localisation facultative.
@@ -43,7 +43,7 @@ La carte est une illustration schématique originale : aucun fond de carte tiers
 
 Aucun compte, publicité, outil d’analyse ou traceur. Aucun itinéraire personnel, nom de voyageur, date de voyage, adresse de courriel ou identifiant de réservation ne doit entrer dans les fichiers publics ou l’historique Git.
 
-Le stockage du navigateur sert aux ressources hors ligne. Les billets et adresses privées doivent être conservés séparément. L’hébergeur peut traiter les données techniques habituelles d’une connexion web ; les sites externes ont leurs propres politiques. La politique CSP limite les ressources de l’application à sa propre origine.
+Le stockage du navigateur sert aux ressources hors ligne et à la liste des favoris, sans compte ni synchronisation. Les billets et adresses privées doivent être conservés séparément. L’hébergeur peut traiter les données techniques habituelles d’une connexion web ; les sites externes ont leurs propres politiques. La politique CSP limite les ressources de l’application à sa propre origine.
 
 ## Développement
 
@@ -86,11 +86,11 @@ Organisation choisie : **mtl2espagne2026**. Dépôt : **mtl2espagne2026.github.i
 
 1. Créer le dépôt public dans cette organisation et vérifier l’accès en écriture du compte autorisé.
 2. Publier ce code sur la branche `main`, sans ajouter de données privées. Les commits locaux de ce projet utilisent une identité générique avec adresse de courriel vide.
-3. Dans **Settings → Pages → Source**, choisir **GitHub Actions**.
-4. Le workflow **Publish guide** construit `dist/`, téléverse l’artefact et déploie Pages.
+3. Le dépôt contient aussi une copie statique à la racine : **Deploy from a branch → main → / (root)** sert directement `index.html`. **GitHub Actions** peut également publier `dist/`.
+4. Après modification du contenu, exécuter `npm run publish:root` et committer les fichiers générés à la racine. Le workflow **Validate and publish guide** vérifie la construction à chaque push. Son lancement manuel publie `dist/` pour les installations dont la source Pages est GitHub Actions ; la publication depuis `main / (root)` utilise le mécanisme Pages natif.
 5. Attendre le succès du workflow et vérifier https://mtl2espagne2026.github.io/ avant d’annoncer la publication.
 
-Si l’application GitHub ne voit pas le dépôt, vérifier la sélection des dépôts autorisés dans l’installation de l’organisation. Ne jamais déposer de jeton ou de clé dans le code, les issues ou une conversation. Aucun déploiement n’est encore attesté dans cette version du projet.
+Si l’application GitHub ne voit pas le dépôt, vérifier la sélection des dépôts autorisés dans l’installation de l’organisation. Ne jamais déposer de jeton ou de clé dans le code, les issues ou une conversation. Vérifier le dernier déploiement Pages et la réponse HTTPS avant d’annoncer une mise en ligne réussie.
 
 ## Identité visuelle
 
@@ -102,19 +102,15 @@ Le logo, l’illustration de côte et la carte sont des créations originales de
 
 Chaque recommandation renvoie à une source. La page **Sources & confidentialité** rassemble les offices de tourisme, les sites des établissements, Aena, EMT et Renfe. Les coordonnées disposent de références consultables. Les textes synthétisent la recherche ; les informations changeantes restent à vérifier auprès de l’opérateur concerné.
 
-**Les photographies ne sont pas encore intégrées.** Les téléchargements directs et les transferts Library ont échoué dans cet environnement. La version actuelle utilise une illustration originale, disponible hors connexion. Ne pas présenter les photos ci-dessous comme déjà présentes dans le site.
-
-Le manifeste complet `asset-manifest.json` conserve les titres, URL d’origine, pages Wikimedia Commons, auteurs et licences des huit photos prévues :
+Six photographies Wikimedia Commons sont intégrées au site et au téléchargement hors ligne (environ 1,7 Mo pour le guide). Le manifeste `public/assets/photos/credits.json` décrit les fichiers utilisés. Les photographies sont redimensionnées, recompressées et recadrées à l’affichage ; les licences et les attributions figurent aussi dans le guide.
 
 | Image | Auteur | Licence |
 | --- | --- | --- |
 | [Playa de Carvajal, Fuengirola 11](https://commons.wikimedia.org/wiki/File:Playa_de_Carvajal%2C_Fuengirola_11.jpg) | Tyk | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 | [Plaza Mayor de Madrid, Panorama 1](https://commons.wikimedia.org/wiki/File:Plaza_Mayor_de_Madrid%2C_Panorama_1.jpg) | D.Rovchak | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | [Mercado Central de Valencia](https://commons.wikimedia.org/wiki/File:Mercado_Central_de_Valencia.JPG) | Karman85 | [CC BY-SA 3.0 ES](https://creativecommons.org/licenses/by-sa/3.0/es/) |
-| [Barajas T4](https://commons.wikimedia.org/wiki/File:Barajas_t4.jpg) | MdeVicente | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | [Port Vell](https://commons.wikimedia.org/wiki/File:Port_Vell_%287856586122%29.jpg) | Craig Sunter | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
 | [El Charco de San Ginés](https://commons.wikimedia.org/wiki/File:El_Charco_de_San_Gin%C3%A9s.jpg) | Santamarcanda | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | [Zona Velha, Funchal](https://commons.wikimedia.org/wiki/File:Zona_Velha%2C_Funchal%2C_Madeira_-_2012-03-13_-_DSC06044.jpg) | DarwIn | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
-| [Tangier1](https://commons.wikimedia.org/wiki/File:Tangier1.jpg) | Jnpet | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 
-Après un transfert réussi : vérifier les images, conserver les crédits et licences, signaler le redimensionnement et le recadrage éventuel, retirer les métadonnées inutiles, reconstruire et retester le téléchargement complet. Les adaptations restent soumises à leur licence respective. La photographie de Tanger est une vue d’archive de 2002, pas une référence sur l’organisation actuelle du port.
+Pour ajouter une photo : vérifier son origine et sa licence, conserver les crédits, signaler les transformations et reconstruire le site. Les adaptations restent soumises à leur licence respective. Les photos d’aéroport et de Tanger initialement envisagées ne sont pas utilisées.
